@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: 'open sans', sans-serif;
+  color: #aaa;
+  line-height: 1.6;
+  font-weight: 300;
+  background-color: #ff3366;
+  padding: 7rem; }
+
+.section-book {
+  display: flex;
+  background-color: transparent; }
+
+.container__left {
+  padding: 4rem 0;
+  width: 50%;
+  position: relative; }
+  .container__left--text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .container__left-heading {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 2rem; }
+    .container__left-heading--1 {
+      font-weight: 600;
+      display: block; }
+    .container__left-heading--2 {
+      font-weight: 600;
+      display: block; }
+  .container__left-text {
+    font-size: 1.3rem;
+    width: 100%;
+    color: #fff; }
+
+.container__right {
+  padding: 3rem 0;
+  width: 50%; }
+  .container__right-heading {
+    padding: 1.5rem 4rem;
+    width: 90%;
+    background-color: navy;
+    border-radius: .3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.3rem; }
+  .container__right-link {
+    text-decoration: none;
+    color: #fff; }
+
+.container__form {
+  background-color: #fff;
+  width: 90%;
+  border-radius: .3rem;
+  padding: 4rem; }
+
+.form__group:not(:last-child) {
+  margin-bottom: 1rem; }
+
+.form__input {
+  width: 100%;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  background-color: rgba(245, 245, 245, 0.638);
+  border: none;
+  font-family: inherit;
+  border-radius: .3rem;
+  border-bottom: 3px solid transparent;
+  display: block;
+  color: inherit; }
+  .form__input::-webkit-input-placeholder {
+    color: #999; }
+
+.form__input:focus {
+  outline: none;
+  border-bottom: 3px solid #7ed56f; }
+  .form__input:focus:focus:invalid {
+    border-bottom: 3px solid #ff3366; }
+
+.form__label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-left: 2rem;
+  margin-top: .7rem;
+  display: block;
+  transition: all .3s; }
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem); }
+
+.btn {
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  width: 100%;
+  background-color: limegreen;
+  border-radius: .3rem;
+  border: .1rem solid limegreen;
+  color: #fff; }
